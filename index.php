@@ -25,7 +25,9 @@
             <div class = "flex mt-6 overflow-x-scroll">
                 <div class = "mr-3">
     
-                    <small>1er semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        1er semestre
+                    </small>
 
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -38,7 +40,9 @@
 
                 <div class = "mr-3">
 
-                    <small>2do semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        2do semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -51,7 +55,9 @@
 
                 <div class = "mr-3">
 
-                    <small>3er semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        3er semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -64,7 +70,9 @@
 
                 <div class = "mr-3">
     
-                    <small>4to semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        4to semestre
+                    </small>
 
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -76,7 +84,9 @@
 
                 <div class = "mr-3">
     
-                    <small>5to semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        5to semestre
+                    </small>
 
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -89,7 +99,9 @@
 
                 <div class = "mr-3">
 
-                    <small>6to semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        6to semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -101,7 +113,9 @@
 
                 <div class = "mr-3">
 
-                    <small>7mo semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        7mo semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -113,7 +127,9 @@
 
                 <div class = "mr-3">
 
-                    <small>8vo semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        8vo semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
@@ -126,7 +142,9 @@
 
                 <div>
 
-                    <small>9no semestre</small>
+                    <small class = "text-center text-gray-600 w-full block mb-1">
+                        9no semestre
+                    </small>
     
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
                     <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
