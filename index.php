@@ -29,12 +29,12 @@
                         1er semestre
                     </small>
 
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 1) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 2) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 3) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 4) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 5) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 6) ?>
     
                 </div>
 
@@ -44,12 +44,12 @@
                         2do semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 7) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 8) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 9) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 10) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 11) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 12) ?>
     
                 </div>
 
@@ -59,12 +59,12 @@
                         3er semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 13) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 14) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 15) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 16) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 17) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 18) ?>
     
                 </div>
 
@@ -74,11 +74,11 @@
                         4to semestre
                     </small>
 
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 19) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 20) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 21) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 22) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 23) ?>
     
                 </div>
 
@@ -88,12 +88,12 @@
                         5to semestre
                     </small>
 
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 24) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 25) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 26) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 27) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 28) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 29) ?>
     
                 </div>
 
@@ -103,11 +103,11 @@
                         6to semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 30) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 31) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 32) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 33) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 34) ?>
     
                 </div>
 
@@ -117,11 +117,11 @@
                         7mo semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 35) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 36) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 37) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 38) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 39) ?>
     
                 </div>
 
@@ -131,12 +131,12 @@
                         8vo semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 40) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 41) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 42) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 43) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 44) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 45) ?>
     
                 </div>
 
@@ -146,11 +146,11 @@
                         9no semestre
                     </small>
     
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
-                    <?php echo materia("taller de etica", "aasdf", "0-0-4") ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 46) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 47) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 48) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 49) ?>
+                    <?php echo materia("taller de etica", "aasdf", "0-0-4", 50) ?>
     
                 </div>
 
@@ -158,6 +158,8 @@
 
         </div>
     </main>
+
+    <script src="./js/app.js"></script>
 
 </body>
 </html>
