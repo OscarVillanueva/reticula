@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reticula</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
     <?php include "./templates/materia.php" ?>
@@ -21,6 +20,14 @@
             <h2 class="text-2xl text-center text-gray-700">
                 Retícula Ingenieria en Sistemas Computacionales
             </h2>
+
+            <div class = "w-full sm:flex sm:justify-center">
+                <a 
+                    class = "w-full lg:w-auto bg-green-600 py-2 px-5 my-3 inline-block text-white rounded text-sm hover:bg-green-800 uppercase font-bold text-center cursor-pointer"
+                >
+                    Generar carga
+                </a>
+            </div>
 
             <div class = "flex mt-6 overflow-x-scroll">
                 <div class = "mr-3">

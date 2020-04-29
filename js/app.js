@@ -103,3 +103,8 @@ const switchClasses = (target, change) => {
     // Cambiamos el estado actual
     target.setAttribute("data-type", to.type)
 }
+
+// funcion para mostrar el tooltip
+const hover = (e) => {
+    console.log(e.target);
+}
