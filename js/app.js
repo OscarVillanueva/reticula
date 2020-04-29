@@ -2,7 +2,6 @@ const asignatures = document.querySelectorAll('.materia')
 
 // Colores normal
 // Sin nada
-// border-gray-700
 const normal = {
     type: "normal",
     border: "border-gray-700",
@@ -12,8 +11,6 @@ const normal = {
 }
 
 // Pasada - first
-// bg-green-600
-// bg-green-400
 const first = {
     type: "first",
     border: "border-green-600",
@@ -23,8 +20,6 @@ const first = {
 }
 
 // Repe - second
-// bg-yellow-600
-// bg-yellow-400
 const second = {
     type: "second",
     border: "border-yellow-600",
@@ -34,8 +29,6 @@ const second = {
 }
 
 // Repe - third
-// bg-red-600
-// bg-red-400
 const third = {
     type: "third",
     border: "border-red-600",
