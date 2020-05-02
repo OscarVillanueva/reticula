@@ -41,19 +41,20 @@
                     <div class = "mr-3">
 
                         <small class = "text-center text-gray-600 w-full block mb-1">
-                            Semestre <?php echo $key + 1 ?>
+                            Semestre <?php echo $key ?>
                         </small>
 
-                        <?php foreach ($value as $asigment) {
-                            echo materia(
-                                $asigment["nombre"],
-                                $asigment["clave"], 
-                                $asigment["creditos"], 
-                                $key,
-                                $asigment["requisitos"]
-                            );
-                        }?>
-
+                        <?php foreach ($value as $id => $asigment) { ?>
+                            <?php 
+                                echo materia(
+                                    $asigment["nombre"],
+                                    $asigment["clave"], 
+                                    $asigment["creditos"], 
+                                    $key,
+                                    $asigment["requisitos"]
+                                );
+                            ?>
+                        <?php } ?>
 
                     </div>
 

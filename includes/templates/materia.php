@@ -5,8 +5,8 @@ function materia($nMat, $cMat, $credMat, $id, $requirements){
 
 	$text = "<div 
 		class = 'border-gray-700 border-2 border-solid rounded mb-3 w-48 materia' data-id = $id data-type ='normal'>
-				<p id='nombre' class = 'text-center py-1'>$nMat</p>
-				<p id='clave' class = 'text-center py-1'>$cMat</p>
+				<p id='nombre' class = 'text-center p-1'>$nMat</p>
+				<p id='clave' class = 'text-center p-1'>$cMat</p>
 				<p id='credito' class = 'text-center mb-1'>$credMat</p>
 				$template
 			</div>";
@@ -20,7 +20,7 @@ function builToolTip($requirements)
 	if(sizeof($requirements) !== 0) {
 
 		if(isset($requirements["pre"]) || isset($requirements["co"])) {
-			if (sizeof($requirements["pre"]) > 0 || sizeof($requirements["co"]) > 0) {
+			if (isset($requirements["pre"])) {
 
 				$template = "<div id = 'req' class = 'rounded mb-1 p-3 bg-gray-200 text-gray-900 '>";
 
@@ -44,7 +44,9 @@ function builToolTip($requirements)
 				
 					$template = $template . $preTemplate ."</ul>";
 				}
+			}
 		
+			if(isset($requirements["co"])) {
 				if(sizeof($requirements["co"]) > 0) {
 		
 					$co = $requirements["co"];
@@ -66,8 +68,9 @@ function builToolTip($requirements)
 					$template = $template . $coTemplate ."</ul>";
 				}
 
-				$template = $template . "</div>";
 			}
+
+			$template = $template . "</div>";
 		}
 
 	}
