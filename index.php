@@ -21,17 +21,17 @@
     <main class = "p-6 w-full sm:w-auto">
         <div>
 
-            <h2 class="text-2xl text-center text-gray-700">
+            <h2 class="text-2xl text-center text-gray-700 hidden">
                 Retícula Ingenieria en Sistemas Computacionales
             </h2>
 
-            <div class = "w-full sm:flex sm:justify-center">
+            <!-- <div class = "w-full sm:flex sm:justify-center">
                 <a 
                     class = "w-full lg:w-auto bg-green-600 py-2 px-5 my-3 inline-block text-white rounded text-sm hover:bg-green-800 uppercase font-bold text-center cursor-pointer"
                 >
                     Generar carga
                 </a>
-            </div>
+            </div> -->
 
             <div class = "flex mt-6 overflow-x-scroll">
 
