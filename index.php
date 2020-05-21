@@ -8,18 +8,12 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <?php 
-        include "./includes/templates/materia.php";
-        include "./includes/functions/fetchData.php";
-        $data = fetchData();
-    ?>
 
     <h1 class = "bg-green-600 text-white text-5xl p-6 text-center">
         Genera tu carga academica
     </h1>
 
-    <main class = "p-6 w-full sm:w-auto">
-        <div>
+    <main id = "app" class = "p-6 w-full sm:w-auto">
 
             <h2 class="text-2xl text-center text-gray-700 hidden">
                 Retícula Ingenieria en Sistemas Computacionales
@@ -35,37 +29,78 @@
 
             <div class = "flex mt-6 overflow-x-scroll">
 
-                <?php 
-                    foreach ($data as $key => $value) {
-                ?>
-                    <div class = "mr-3">
+                <template v-for = "subjects in subjectsBySemester">
+
+                    <div class="mr-3" >
 
                         <small class = "text-center text-gray-600 w-full block mb-1">
-                            Semestre <?php echo $key ?>
+                            Semestre {{ subjects[0].semestre }}
                         </small>
 
-                        <?php foreach ($value as $id => $asigment) { ?>
-                            <?php 
-                                echo materia(
-                                    $asigment["nombre"],
-                                    $asigment["clave"], 
-                                    $asigment["creditos"], 
-                                    $key,
-                                    $asigment["requisitos"]
-                                );
-                            ?>
-                        <?php } ?>
+                        <materia 
+                            v-for = "subject in subjects"
+                            :subject = "subject.nombre"
+                            :uid = "subject.clave"
+                            :credits = "subject.creditos"
+                            :requirements = "subject.requisitos"
+                        />
 
                     </div>
 
-                <?php } ?>
+                </template>
 
             </div>
-
-        </div>
+            
     </main>
 
-    <script src="./js/app.js"></script>
+    <script type = "text/template" id = "materia-template">
+        <div 
+            class = 'border-gray-700 border-2 border-solid rounded mb-3 w-48 materia' 
+            data-id = $id 
+            data-type ='normal'
+        >
+            <p id='nombre' class = 'text-center p-1'>{{ subject }}</p>
+            <p id='clave' class = 'text-center p-1'>{{ uid }}</p>
+            <p id='credito' class = 'text-center mb-1'>{{ credits }}</p>
+            
+            <div v-if = "isReq" >
+                <div id = "req" class="rounded mb-1 p-3 bg-gray-200 text-gray-900">
+                    <div v-if = "isPre">
 
+                        <p class="text-left pl-1 mb-1 font-black uppercase text-sm">Pre-requisitos</p>
+
+                        <ul>
+                            <li 
+                                class="mb-2 border-t border-gray-500 p-1 text-sm"
+                                v-for = " mat in requirements.pre"
+                            >
+                                {{ mat }}
+                            </li>
+                        </ul>
+
+                    </div>
+    
+                    <div v-if = "isCo">
+
+                        <p class="text-left pl-1 my-2 font-black uppercase text-sm">co-requisitos</p>
+
+                        <ul>
+                            <li 
+                                class="mb-2 border-t border-gray-500 p-1 text-sm"
+                                v-for = " mat in requirements.co"
+                            >
+                                {{ mat }}
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
