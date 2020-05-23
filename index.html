@@ -27,7 +27,7 @@
                 </a>
             </div> -->
 
-            <div class = "flex mt-6 overflow-x-scroll">
+            <div class = "flex mt-6 overflow-x-scroll h-screen  w-full">
 
                 <template v-for = "subjects in subjectsBySemester">
 
@@ -39,6 +39,7 @@
 
                         <materia 
                             v-for = "subject in subjects"
+                            :key = "subject.clave"
                             :subject = "subject.nombre"
                             :uid = "subject.clave"
                             :credits = "subject.creditos"
@@ -56,7 +57,7 @@
     <script type = "text/template" id = "materia-template">
         <div 
             class = 'border-gray-700 border-2 border-solid rounded mb-3 w-48 materia' 
-            data-id = $id 
+            :data-id = "uid"
             data-type ='normal'
         >
             <p id='nombre' class = 'text-center p-1'>{{ subject }}</p>

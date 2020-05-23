@@ -1,25 +1,33 @@
 Vue.component("materia", {
     template: "#materia-template",
     props: [ "subject", "uid", "credits", "requirements" ],
-
-    data() {
-        return {
+    computed: {
+        isReq () {
             // Verificamos que esten los requisitos
-            isReq: this.requirements !== undefined,
-
-            // Verificamos si hay prerequisitos
-            isPre: this.requirements.pre !== undefined,
-
-            // Verificamos si hay correquisitos
-            isCo: this.requirements.co !== undefined,
+            return this.requirements !== undefined
+        },
+        isPre() {
+            if ( this.isReq ) return this.requirements.pre !== undefined
+            else return false
+        },
+        isCo() {
+            if ( this.isReq ) return this.requirements.co !== undefined
+            else return false
         }
+    },
+    mounted() {
+        // console.log("montado");
     }
 })
 
 new Vue({
     el: "#app",
-    mounted() {
-        console.log(this.subjects);
+    async mounted() {
+
+        const response = await fetch("db.json")
+        const { Materias } = await response.json()
+
+        this.subjects = Materias
     },
     computed: {
         subjectsBySemester(){
@@ -41,7 +49,6 @@ new Vue({
                 while ( bridge.length > 0 );
 
             }
-            console.log(this.grouped);
             return this.grouped
 
         }
@@ -49,51 +56,7 @@ new Vue({
     data() {
         return {
 
-            subjects: [
-                {
-                    nombre: "React",
-                    clave: "a866s",
-                    semestre: "1",
-                    creditos: "4-3-2",
-                    requisitos: {
-                        pre: [
-                            "JavaScript",
-                        ],
-                        co: [
-                            "Base de datos"
-                        ]
-                    }
-                },
-                {
-                    nombre: "Angular",
-                    clave: "a866s",
-                    semestre: "1",
-                    creditos: "4-3-2",
-                    requisitos: {
-                        pre: [
-                            "JavaScript",
-                        ],
-                        co: [
-                            "Base de datos"
-                        ]
-                    }
-                },
-                {
-                    nombre: "Vue",
-                    clave: "a866s",
-                    semestre: "2",
-                    creditos: "4-3-2",
-                    requisitos: {
-                        pre: [
-                            "JavaScript",
-                        ],
-                        co: [
-                            "Base de datos"
-                        ]
-                    }
-                }
-            ],
-
+            subjects: [],
             grouped: []
 
         }

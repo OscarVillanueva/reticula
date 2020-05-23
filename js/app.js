@@ -1,4 +1,11 @@
-const asignatures = document.querySelectorAll('.materia')
+
+setTimeout(() => {
+
+    const subjects = document.querySelectorAll('.materia');
+    
+    prepare( subjects )
+
+}, 1000);
 
 // Colores normal
 // Sin nada
@@ -39,44 +46,48 @@ const third = {
 
 // Cambio de clases, segun el click
 // nomal -> first -> second -> third -> normal
+const prepare = asignatures => {
+    
+    asignatures.forEach(asignature => {
+        asignature.addEventListener('click', (e) => {
+            
+            // Detectamos el elemento que fue clickeado, subimos hasta el padre (en este caso)
+            // Ya que este es el que contiene el id, en el atributo data-id
+            let target = e.target
+            while(!target.getAttribute("data-id"))
+                target = target.parentElement
+    
+            // Indicamos el cambio desde el previo hasta el nuevo
+            const change = {
+                previous: normal,
+                to: first
+            }
+    
+            // Detecamos el cambio
+            switch (target.getAttribute("data-type")) {
+                case "first":
+                    change.previous = first
+                    change.to = second
+                    break;
+    
+                case "second":
+                    change.previous = second
+                    change.to = third
+                    break;
+    
+                case "third":
+                    change.previous = third
+                    change.to = normal
+                    break;
+            }
+    
+            // Hacemos el cambio
+            switchClasses(target, change)
+        })
+    });
 
-asignatures.forEach(asignature => {
-    asignature.addEventListener('click', (e) => {
-        
-        // Detectamos el elemento que fue clickeado, subimos hasta el padre (en este caso)
-        // Ya que este es el que contiene el id, en el atributo data-id
-        let target = e.target
-        while(!target.getAttribute("data-id"))
-            target = target.parentElement
+}
 
-        // Indicamos el cambio desde el previo hasta el nuevo
-        const change = {
-            previous: normal,
-            to: first
-        }
-
-        // Detecamos el cambio
-        switch (target.getAttribute("data-type")) {
-            case "first":
-                change.previous = first
-                change.to = second
-                break;
-
-            case "second":
-                change.previous = second
-                change.to = third
-                break;
-
-            case "third":
-                change.previous = third
-                change.to = normal
-                break;
-        }
-
-        // Hacemos el cambio
-        switchClasses(target, change)
-    })
-});
 
 const switchClasses = (target, change) => {
     const { previous, to } = change
