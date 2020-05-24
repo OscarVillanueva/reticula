@@ -1,0 +1,756 @@
+{
+  "Materias": [
+    {
+      "nombre": "Calculo Diferencial",
+      "clave": "ACF0901",
+      "semestre": "1",
+      "creditos": "4"
+    },
+    {
+      "nombre": "Fundamentos de Programacion",
+      "clave": "SCD1008",
+      "semestre": "1",
+      "creditos": "5"
+    },
+   {
+      "nombre": "Taller de Etica",
+      "clave": "ACA0907",
+      "semestre": "1",
+      "creditos": "4"
+    },
+     {
+      "nombre": "Matematicas Discretas",
+      "clave": "AEF1041",
+      "semestre": "1",
+      "creditos": "5"
+    },
+    {
+      "nombre": "Fundamentos de Investigacion",
+      "clave": "ACC0906",
+      "semestre": "1",
+      "creditos": "4"
+    },
+
+    {
+      "nombre": "Programacion Orientada a Objetos",
+      "clave": "SCD-1020",
+      "semestre": "2",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Fundamentos de Programacion"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Calculo Integral",
+      "clave": "ACF-0902",
+      "semestre": "2",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Calculo Diferencial"
+        ]
+      }
+    },
+    {
+      "nombre": "Quimica",
+      "clave": "AEC-1058",
+      "semestre": "2",
+      "creditos": "4"
+    },
+
+     {
+      "nombre": "Taller de Administracion",
+      "clave": "SCH-1024",
+      "semestre": "2",
+      "creditos": "4"
+    },
+
+
+      {
+      "nombre": "Desarrollo Sustentable",
+      "clave": "ACD-0908",
+      "semestre": "2",
+      "creditos": "5"
+    },
+
+     {
+      "nombre": "Probabilidad Y Estadistica",
+      "clave": "AEF-1052",
+      "semestre": "2",
+      "creditos": "5",
+      "requisitos": {
+        "co": [
+        "Calculo Integral"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Calculo Vectorial",
+      "clave": "ACF-0904",
+      "semestre": "3",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Calculo Integral"
+        ],
+        "co": [
+       "Algebra Lineal"
+        ]
+      }
+    },
+
+      {
+      "nombre": "Algebra Lineal",
+      "clave": "ACF-0903",
+      "semestre": "3",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Calculo Diferencial"
+        ],
+        "co": [
+       "Algebra Lineal"
+        ]
+      }
+    },
+
+
+     {
+      "nombre": "Estructura De Datos",
+      "clave": "AED-1026",
+      "semestre": "3",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Programacion Orientada a Objetos"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Contabilidad Financiera",
+      "clave": "AEC-1008",
+      "semestre": "3",
+      "creditos": "4"
+    },
+
+     {
+      "nombre": "Investigacion De Operaciones",
+      "clave": "SCC-1013",
+      "semestre": "3",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Probabilidad y Estadistica",
+          "Calculo Integral"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Fisica General",
+      "clave": "SCF-1006",
+      "semestre": "3",
+      "creditos": "5",
+      "requisitos": {
+        "co": [
+       "Calculo Vectorial"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Ecuaciones Diferenciales",
+      "clave": "ACF-0905",
+      "semestre": "4",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Calculo Vectorial"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Metodos Numericos",
+      "clave": "SCC-1017",
+      "semestre": "4",
+      "creditos": "4",
+      "requisitos": {
+        "co": [
+       "Ecuaciones Diferenciales",
+       "Programacion Orientada a Objetos"
+        ]
+      }
+    },
+
+
+ {
+      "nombre": "Principios Electricos y Aplicaciones Digitales",
+      "clave": "SCD-1018",
+      "semestre": "4",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Fisica General"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Topicos Avanzados De Programacion",
+      "clave": "SCD-1027",
+      "semestre": "4",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Programacion Orientada a Objetos"
+        ],
+        "co": [
+       "Estructura De Datos"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Sistemas Operativos",
+      "clave": "AEC-1061",
+      "semestre": "4",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Estructura De Datos"
+        ]
+      }
+    },
+
+
+
+     {
+      "nombre": "Fundamentos de Bases de Datos",
+      "clave": "AEF-1031",
+      "semestre": "4",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Estructura De Datos"
+        ]
+      }
+    },
+
+
+     {
+      "nombre": "Fundamentos de Telecomunicaciones",
+      "clave": "AEC-1034",
+      "semestre": "5",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Principios Electricos y Aplicaciones Digitales"
+        ]
+      }
+    },
+
+ {
+      "nombre": "Fundamentos de Ingenieria de Software",
+      "clave": "SCC-1007",
+      "semestre": "5",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Estructura de Datos"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Simulacion",
+      "clave": "SCD-1022",
+      "semestre": "5",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Investigacion de Operaciones",
+          "Programacion Orientada a Objetos"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Taller de Base de Datos",
+      "clave": "SCA-1025",
+      "semestre": "5",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Fundamentos de Bases de Datos"
+        ]
+      }
+    },
+
+
+     {
+      "nombre": "Taller de Sistemas Operativos",
+      "clave": "SCA-1026",
+      "semestre": "5",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Sistemas Operativos"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Arquitectura de Computadoras",
+      "clave": "SCD-1003",
+      "semestre": "5",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Principios Electricos y Aplicaciones Digitales"
+        ]
+      }
+    },
+
+{
+      "nombre": "Cultura Empresarial",
+      "clave": "SCC-1005",
+      "semestre": "5",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "35% Avance"
+        ]
+      }
+    },
+    {
+      "nombre": "Redes De Computadoras",
+      "clave": "SCD-1021",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Fundamentos de Telecomunicaciones"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Ingenieria de Software",
+      "clave": "SCD-1011",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Fundamentos de Ingenieria de Software"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Programacion Web",
+      "clave": "AEB-1055",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Taller de Bases de Datos"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Administracion de base de Datos",
+      "clave": "SCB-1001",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Taller de Bases de Datos"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Lenguajes y Automatas I",
+      "clave": "SCD-1015",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "co": [
+       "Estructura de Datos"
+        ]
+      }
+    },
+
+ {
+      "nombre": "Lenguajes de Interfaz",
+      "clave": "SCD-1014",
+      "semestre": "6",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Arquitectura de Computadoras"
+          
+        ]
+      }
+    },
+
+
+     {
+      "nombre": "Graficacion",
+      "clave": "SCD-1010",
+      "semestre": "6",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Estructura de Datos",
+          "40% Avance"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Conmutacon y Enrutamiento de Redes de Datos",
+      "clave": "SCD-1004",
+      "semestre": "7",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Redes de Computadoras"
+          
+        ]
+      }
+    },
+
+     {
+      "nombre": "Gestion de Proyectos de Software",
+      "clave": "SCG-1009",
+      "semestre": "7",
+      "creditos": "6",
+      "requisitos": {
+        "pre": [
+          "Ingenieria de Software",
+          "Taller de Administracion",
+          "Taller de base de Datos"
+          
+        ]
+      }
+    },
+
+     {
+      "nombre": "Topicos Avanzados de Programacion Web", 
+      "clave": "GDT-1301",
+      "semestre": "7",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Programacion Web"
+          
+        ]
+      }
+    },
+
+     {
+      "nombre": "Topicos Avanzados de Programacion Web", 
+      "clave": "TGD-1701",
+      "semestre": "7",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Programacion Web"
+          
+        ]
+      }
+    },
+
+
+ {
+      "nombre": "Desarrollo de Habilidades Gerenciales", 
+      "clave": "TTD-1301",
+      "semestre": "7",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "60% Avance"
+          
+        ]
+      }
+    },
+
+
+    {
+      "nombre": "Desarrollo de Habilidades Directivas", 
+      "clave": "IND-1601",
+      "semestre": "7",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "60% Avance"
+        ]
+      }
+    },
+
+
+    {
+      "nombre": "Taller De Investigacion I", 
+      "clave": "ACA-0909",
+      "semestre": "7",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "60% Avance"
+          
+        ]
+      }
+    },
+
+     {
+      "nombre": "Lenguajes y Automatas II", 
+      "clave": "SCD-1016",
+      "semestre": "7",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Lenguajes y Automatas I"
+        ]
+      }
+    },
+
+
+     {
+      "nombre": "Inteligencia Artificial", 
+      "clave": "SCC-1012",
+      "semestre": "7",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Lenguajes y Automatas I",
+          "50% Avance"
+          
+        ]
+      }
+    },
+
+
+    {
+      "nombre": "Sistemas Programables", 
+      "clave": "SCD-1023",
+      "semestre": "7",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Lenguajes de Interfaz"
+          ]
+      }
+    },
+
+      {
+      "nombre": "Programacion Logica y Funcional", 
+      "clave": "SCC-1019",
+      "semestre": "8",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Estructura de Datos",
+          "60% Avance"
+          ]
+      }
+    },
+
+     {
+      "nombre": "Administracion de Redes", 
+      "clave": "SCC-1002",
+      "semestre": "8",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Conmutacon de Redes de Computadoras",
+          "Taller de Sistemas Operativos"
+          ]
+      }
+    },
+
+     {
+      "nombre": "Administracion de Redes", 
+      "clave": "SCC-1019",
+      "semestre": "7",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Conmutacon de Redes de Computadoras",
+          "Taller de Sistemas Operativos"
+          ]
+      }
+    },
+
+    {
+      "nombre": "Taller de Investigacion II", 
+      "clave": "ACA-0910",
+      "semestre": "8",
+      "creditos": "4",
+      "requisitos": {
+        "pre": [
+          "Taller de Investigacion I"
+         
+          ]
+      }
+    },
+
+
+     {
+      "nombre": "Administracion Estrategica", 
+      "clave": "TTD-1302",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "68% de creditos aprobados"
+         
+          ]
+      }
+    },
+
+
+
+
+ {
+      "nombre": "Analisis de Datos Para la Toma De Desiciones", 
+      "clave": "TTD-1303",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "68% de creditos aprobados"
+         
+          ]
+      }
+    },
+
+    {
+      "nombre": "Herramientas para la Inteligencia de Negocios", 
+      "clave": "TTD-1304",
+      "semestre": "8",
+      "creditos": "5"
+    },
+
+
+     {
+      "nombre": "Tecnologias Emergentes e Innovacion", 
+      "clave": "TTD-1305",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "co": [
+       "68% creditos aprobados"
+        ]
+      }
+    },
+
+    {
+      "nombre": "Topicos Avanzados de Seguridad en Redes Convergentes",
+      "clave": "GDT-1302",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "co": [
+       "Administracion de Redes"
+        ]
+      }
+    },
+
+     {
+      "nombre": "Programacion Avanzada en Tecnologias Moviles",
+      "clave": "GDT-1303",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "65% Avance"
+         
+          ]
+      }
+    },
+
+     {
+      "nombre": "Topicos Avanzados de Bases de Datos",
+      "clave": "GDT-1304",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Administracion de Bases de Datos"
+         
+          ]
+      }
+    },
+
+
+
+
+     {
+      "nombre": "Desarrolos Inteligentes",
+      "clave": "GDT-1305",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "Inteligencia Artificial"
+         
+          ]
+      }
+    },
+
+
+     {
+      "nombre": "Gestion Estrategica",
+      "clave": "IND-1602",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "68% creditos Comprobados"
+         
+          ]
+      }
+    },
+
+     {
+      "nombre": "Analitica de Negocio",
+      "clave": "IND-1603",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "68% creditos Comprobados"
+          ]
+      }
+    },
+
+     {
+      "nombre": "Herramientas para la Inteligencia de Negocios",
+      "clave": "IND-1604",
+      "semestre": "8",
+      "creditos": "5"
+    },
+
+     {
+      "nombre": "Proyectos de Innovacion Tecnologica",
+      "clave": "IND-1605",
+      "semestre": "8",
+      "creditos": "5",
+      "requisitos": {
+        "pre": [
+          "68% creditos Comprobados"
+         
+          ]
+      }
+    }
+
+  ]
+}

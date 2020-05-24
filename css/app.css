@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Para mostrar los prerequisitos y requisitos */
+.materia {
+    position: relative;
+}
+
+.materia #req {
+    display: none;
+}
+
+.materia:hover #req {
+    display: block;
+}
+
+#req {
+    width: 120px;
+    text-align: center;
+    
+    width: 10rem;
+    top: 25%;
+    left: 90%; 
+    margin-left: -5rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9999999999;
+}
