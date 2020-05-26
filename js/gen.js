@@ -143,8 +143,10 @@ const fetchSubjects = async carga => {
 
 	ids.forEach( id => {
 
+		// Buscamos la materia entre todas las materias
 		const subject = Materias.find( subject => subject.clave === id )
 
+		// Si la encuentra la agrega al arreglo de propuesta
 		if(subject) propuesta.push( subject )
 
 	});
