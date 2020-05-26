@@ -8,8 +8,8 @@ const button = document.querySelector('#gen')
 
 //Funcion recuperar datos materia
 function recmat (mate) {
-	this.nom = mate[1].childNodes[0].data;
-	this.cred = mate[5].childNodes[0].data;
+	this.nom = mate.querySelector("#nombre").innerHTML;
+	this.cred = mate.querySelector("#credito").innerHTML;
 }
 
 //Inserta las materias de una lista a la carga si no sobrepasa los creditos
@@ -17,16 +17,17 @@ function insertar (list)
 {
 	for (i = 0; i < list.length ; i++)
 	{
-		if(creditos + parseInt(list[i].childNodes[5].innerHTML) <= credmax)
+		if(creditos + parseInt(list[i].querySelector("#credito").innerHTML) <= credmax)
 		{
 			if(!carga.includes(list[i],0))
 			{
-				creditos = creditos + parseInt(list[i].childNodes[5].innerHTML);
+				creditos = creditos + parseInt(list[i].querySelector("#credito").innerHTML);
 				carga.push(list[i]);
 			}
 		}else
 			break;
 	}
+
 }
 
 //Comprueba que la materia pueda ser ingresada
@@ -82,7 +83,7 @@ function comprueba(list)
 	insertar(lista);
 }
 // Le agreamos un evento clic
-button.addEventListener('click', (e) => {
+button.addEventListener('click', async e => {
     e.preventDefault()
 	creditos = 0 ;
 	credmax = 21;
@@ -114,11 +115,39 @@ button.addEventListener('click', (e) => {
 	comprueba(normal);
 
     // Para que en la consola del navegador vean como esta la estructa
-	for (i=0;i<carga.length;i++)
-	{
-	var asd = new recmat(carga[i].childNodes);
-	console.log(asd.nom + ' ' + asd.cred);
-    }
-	console.log(carga);
+	// for (i=0;i<carga.length;i++)
+	// {
+	// var asd = new recmat(carga[i]);
+	// console.log(asd.nom + ' ' + asd.cred);
+	// }
+	
+	// Este arreglo tiene las materias en un arreglo para que se ha más facil mostrar en pantalla
+	const propuesta = await fetchSubjects(carga)
+
+	console.log(propuesta);
     console.log("Generando . . . ");  
 })
+
+// Cargar las materias originales
+const fetchSubjects = async carga => {
+
+	// Cargamos todas materias 
+	const response = await fetch("db.json")
+	const { Materias } = await response.json()
+
+	// Sacamos los ids seleeccionados
+	const ids = carga.map(subject => subject.getAttribute("data-id"))
+
+	// Propuesta
+	const propuesta = []
+
+	ids.forEach( id => {
+
+		const subject = Materias.find( subject => subject.clave === id )
+
+		if(subject) propuesta.push( subject )
+
+	});
+
+	return propuesta;
+}
